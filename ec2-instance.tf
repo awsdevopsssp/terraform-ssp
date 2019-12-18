@@ -1,6 +1,7 @@
-ami = "ami-02913db388613c3e1"
-instance_type = "t2.small"
-tags = {
-    tag-key = "devops-instance"
+resource "aws_instance" "web" {
+  ami = "ami-12345678"
+  instance_type = "t1.micro"
+  tags {
+    Name = "HelloWorld"
   }
 }
